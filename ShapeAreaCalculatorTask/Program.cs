@@ -18,24 +18,24 @@ namespace ShapeAreaCalculatorTask
 			Console.WriteLine(areaOfPentagon(15));
 			Console.WriteLine(areaOfOctagon(12));
         }
-        static double areaOfCircle(double r)//Add the parameters
+        static double areaOfCircle(double r)
         {
  			return Math.PI*Math.Pow(r,2);
         }
-		 static double areaOfTriangle(double sidelength)//Add the parameters
+		 static double areaOfTriangle(double sidelength)
         {
 			 return (Math.Sqrt(3)) / 4 * Math.Pow(sidelength,2);
            
         } 
-		static double areaOfRectangle(double length, float width)//Add the parameters
+		static double areaOfRectangle(double length, float width)
         {
 			return length*width;
         }
-		static double areaOfPentagon(double sidelength)//Add the parameters
+		static double areaOfPentagon(double sidelength)
         {
 			return 0.25 * Math.Sqrt(5 * (5 + 2 * Math.Sqrt(5))) * Math.Pow(sidelength, 2);
         }
-		 static double areaOfOctagon(double sidelength)//Add the parameters
+		 static double areaOfOctagon(double sidelength)
         {
 			return (2 * (1 + Math.Sqrt(2))) * Math.Pow(sidelength, 2);
         }
