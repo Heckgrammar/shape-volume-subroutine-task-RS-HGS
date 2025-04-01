@@ -1,4 +1,6 @@
-﻿namespace ShapeAreaCalculatorTask
+using System;﻿
+
+namespace ShapeAreaCalculatorTask
 {
     internal class Program
     {
@@ -10,10 +12,33 @@
             // Rectangle
             // Pentagon
             // Octagon
+			Console.WriteLine(areaOfCircle(1.5));
+			Console.WriteLine(areaOfTriangle(3));
+			Console.WriteLine(areaOfRectangle(2,5));
+			Console.WriteLine(areaOfPentagon(15));
+			Console.WriteLine(areaOfOctagon(12));
         }
-        static int areaOfRectangle()//Add the parameters
+        static double areaOfCircle(double r)//Add the parameters
         {
-
+ 			return Math.PI*Math.Pow(r,2);
         }
+		 static double areaOfTriangle(double sidelength)//Add the parameters
+        {
+			 return (Math.Sqrt(3)) / 4 * Math.Pow(sidelength,2);
+           
+        } 
+		static double areaOfRectangle(double length, float width)//Add the parameters
+        {
+			return length*width;
+        }
+		static double areaOfPentagon(double sidelength)//Add the parameters
+        {
+			return 0.25 * Math.Sqrt(5 * (5 + 2 * Math.Sqrt(5))) * Math.Pow(sidelength, 2);
+        }
+		 static double areaOfOctagon(double sidelength)//Add the parameters
+        {
+			return (2 * (1 + Math.Sqrt(2))) * Math.Pow(sidelength, 2);
+        }
+		
     }
 }
